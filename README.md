@@ -8,7 +8,7 @@ educational and study purposes, for you to learn trivia, for me to learn about
 
 It's a beta. Things are cooked, sus, etc.
 
-[Join me and other lavacakes on discord to discuss](https://discord.gg/CCD4xxbJ)
+[Join me and other lavacakes on discord to discuss](https://discord.gg/Q23NMHem4g)
 
 ---
 ## ⬇️ [**Download the latest release here**](https://github.com/breastickle/qzr-beta/releases) - Scroll to "Assets" and locate your OS
