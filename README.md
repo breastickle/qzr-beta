@@ -18,6 +18,22 @@ It's a beta. Things are cooked, sus, etc.
 </p>
 ---
 
+## New here? Read this first
+
+**The game.** *Jeopardy! 25th Anniversary Edition* is a 1990 Nintendo (NES) video
+game of the classic TV quiz show — you play a contestant, pick categories, and answer
+trivia "in the form of a question," Daily Doubles and Final Jeopardy and all. The
+catch: the original cartridge has a **fixed** set of questions, so once you've played
+through them, you've seen them all — replay value gone.
+
+**What QZR does.** QZR is a small tool (not the game itself) that rebuilds that
+cartridge with **fresh trivia** pulled from a database of **45,000+ 
+clues**. Pick the subjects you want, hit **Generate**, and it spits out a new game
+file you load in an NES emulator. It's different every time — so the game becomes
+endlessly replayable, and a sneaky-good way to **study trivia**.
+
+---
+
 ## What's in `v0.8b`?
 
 A **~10% slice** of the full corpus — every lane cut to roughly a tenth of its
