@@ -9,6 +9,12 @@ educational and study purposes, for you to learn trivia, for me to learn about
 It's a beta. Things are cooked, sus, etc.
 
 ---
+## ⬇️ [**Download the latest release here**](https://github.com/breastickle/qzr-beta/releases) - Scroll to "Assets" and locate your OS
+---
+<p align="center">
+  <img src="QZRmain.png" alt="QZR" width="600">
+</p>
+---
 
 ## What's in `v0.8b`?
 
