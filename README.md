@@ -1,11 +1,10 @@
-# qzr-beta
-Beta release for a trivia study guide fun rom to modernize Jeopardy! 25th Anniversary
-
 # QZR — Quiz Randomizer · **OPEN BETA** (`v0.8b`)
 
 A deterministic randomizer for the NES *Jeopardy! 25th Anniversary Edition*.
 Feed it a clean ROM, pick your flavor, get back a fresh 29-game cartridge that
-nobody asked for but everybody needs.
+nobody asked for but everybody needs. The purpose of this is trivial, for
+educational and study purposes, for you to learn trivia, for me to learn about
+6502 assembly.
 
 It's a beta. Things are cooked, sus, etc.
 
@@ -36,11 +35,7 @@ categories, so beta play still exercises the whole database in miniature.
 
 ---
 
-## 0) Is your ROM the real deal?
-
-QZR does **not** ship the game — that part's between you and your dusty cartridge.
-You supply a clean NES dump; QZR does the rest. If your base ROM is wrong, every
-build off it is wrong, so check it once:
+## 0) CRC Facts
 
 **Base ROM — *Jeopardy! 25th Anniversary Edition* (NES, NTSC)**
 
@@ -59,11 +54,10 @@ up — a randomizer makes a different ROM per setting. Instead, each build is fu
 described by its **FLAGS + SEED + version**, which are:
 
 - **stamped on the title screen**, and
-- **baked into the filename:** `QZR_<flags>_<seed>_<corpus8>.nes`
+- **baked into the filename:** `QZR_<flags>_<seed>.nes`
   e.g. `QZR_AAAAAAAA0000_3FAF6BADE7E2A93F_dabb7f36.nes`
 
-Hand those three values to anyone and they rebuild your *exact* ROM, byte for byte.
-(Output is also 131,088 bytes, headered, just like the input.)
+Hand those two values to anyone and they rebuild your *exact* ROM, byte for byte.
 
 ---
 
@@ -90,6 +84,7 @@ lane   Globe  History  Books&Poetry   Stage  Music/Cinema/TV  Math&Science    Sp
 - **Race a friend.** Same FLAGS + SEED = the same 29 games. Swap codes and compete.
   *Recommended rules:* VS Computer = Yes, Difficulty 3 — finish a game in 1st place.
 - **Turn up the heat.** Flip **Harder Mode** and watch the easy clues thin out.
+- **Try some pallet swaps.** Select your favorite, or go bold with Random.
 - **Go again.** New seed = a brand-new board set, same flavor.
 
 > **Important!** Save your progress with save states — there are **29 episodes** baked
@@ -100,7 +95,7 @@ lane   Globe  History  Books&Poetry   Stage  Music/Cinema/TV  Math&Science    Sp
 ## 2) What this isn't / known defects
 
 This is a **~10% slice** of the full clue database — small on purpose, for size and
-test speed. Rough edges we already know about:
+test speed. Rough edges:
 
 - **Some clues are rough, a few are just wrong.** The slice was cut from a big, messy
   corpus without a hand-polish pass — surfacing those is literally what the beta is for.
@@ -137,5 +132,26 @@ won't produce a ROM at all · **factually wrong answers** · anything that looks
 **Already on the list — save your breath:**
 wrong *What-is / Who-is* prompts · Final Jeopardy ignoring the sliders · rough-but-readable
 clues · the occasional repeat across games · random palette/NPC picks.
+
+---
+
+## On the table for v1.0 (lobby your favorite)
+
+The big-ticket features under consideration between here and **v1.0** — the stuff that
+turns a working beta into something worth keeping. Each has a **permanent ID (`RE#`)**
+so you can champion it by name: tell me *"I'd play the heck out of RE6"* and it climbs.
+
+| # | Feature | The pitch |
+| --- | --- | --- |
+| **RE1** | Faster pacing | Trim the slow type-out + score-tally animations so die-hards aren't waiting on the NPCs. |
+| **RE2** | Realism mode | Clue reveals a line at a time; buzz-in stays locked until the host "finishes reading." |
+| **RE3** | Tunable opponents | Dial the CPU players from pushover to merciless — or hand them personalities. |
+| **RE4** | Remember my settings | Loop straight into the next game without redoing setup every time. |
+| **RE5** | Counter mode | Score by *number of correct answers* instead of dollars. |
+| **RE6** | Flashcard mode | Pure study: no setup, no podiums, short timer, no buzz-in — just you and the board. |
+| **RE7** | Smarter Final wagers | Teach the CPU to bet like it's seen a lock game before. |
+| **RE8** | New art themes | Re-skinned characters you pick from a list — or pull at random. |
+| **RE9** | Force real / hardest Finals | A flag to guarantee genuine Final Jeopardy clues, or the hardest in the slot. |
+| **RE10** | Bust the RNG myths | Pin down the original cart's board-shuffle + reset behavior — the "why did that Final repeat?" deep-dive. |
 
 Breast regards.
