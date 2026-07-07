@@ -1,4 +1,4 @@
-# QZR — Quiz Randomizer · **OPEN BETA** (`v0.8b`)
+# QZR — Quiz Randomizer · **OPEN BETA** (`v0.9.7-beta`)
 
 A deterministic randomizer for the NES *Jeopardy! 25th Anniversary Edition*.
 Feed it a clean ROM, pick your flavor, get back a fresh 29-game cartridge that
